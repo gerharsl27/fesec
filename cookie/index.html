@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self';">
   <link rel="icon" href="https://fav.farm/🍪">
   <title>Cookie</title>
 </head>
@@ -20,7 +21,7 @@
     const formEl = document.getElementById('login')
     formEl.addEventListener('submit', async (e) => {
       e.preventDefault()
-      
+
       const username = formEl.username.value
       const password = formEl.password.value
       let enc = new TextEncoder();
